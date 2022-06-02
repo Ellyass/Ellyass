@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CV</title>
+<style>
+     td{text-align: center;}
+     body{margin-left: 450px;}
+     #secim2{margin-left: 16px;}
+     #secim6{margin-left: 21px;}
+ 
+     /*._cınsıyet{
+         display: block;
+         position: relative;
+         padding-left: 25;
+         margin-bottom: 10;
+         cursor: pointer;
+         font-size: 10;
+     }
+     ._cınsıyet{
+         opacity: 0;
+     }
+
+     ._cinsiyet{
+         
+         position: absolute;
+         top: 4;
+         left: 0;
+         height: 15;
+         width: 15;
+         background-color: #bbb;
+         border-radius: 50%;
+     }
+
+     ._cınsıyet input:checked ~ ._cinsiyet {
+    background-color: #E7512F;
+}
+
+._cinsiyet:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+._cınsıyet input:checked ~ ._cinsiyet:after {
+    display: block;
+}
+
+._cınsıyet ._cinsiyet:after {
+top: 6px;
+left: 6px;
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background: white;
+}
+*/
+     
+</style>
+</head>
+<body bgcolor="E5CCFF">
+<form action="" method="post">
+    
+<table border="1">
+    <thead>        
+        <tr>
+            <td align="center" colspan="2">İŞ BAŞVURU FORMU</td>
+        </tr>
+    </thead>
+
+    <tr>
+        <td>Adı:</td>
+        <td><input type="text" name="ad" id="ad" required placeholder="Lütfen Adınızı Giriniz..."></td>
+    </tr>
+
+    <tr>
+        <td>Soyisim:</td>
+        <td><input type="text" name="soyad" id="soyad" required placeholder="Lütfen Soyadınızı Giriniz..."></td>
+    </tr>
+ 
+    <tr>
+        <td>E-posta:</td>
+        <td><input type="email" name="mail" id="mail" required placeholder="example@gmail.com"></td>
+    </tr>
+
+    <tr>
+        <td>Şifre:</td>
+        <td><input type="password" name="sifre" id="sifre" required></td>
+    </tr>
+
+    <tr>
+        <td>Doğum Tarihi:</td>
+        <td><input type="date" name="dtarihi" id="dtarihi" required></td>
+    </tr>
+
+    <tr>
+        <td>Doğum Yeri:</td>
+        <td>
+            <input list="Sehirler"><datalist id="Sehirler">
+            <option value="Adana">
+            <option value="Adıyaman">
+            <option value="Afyonkarahisar">
+            <option value="Ağrı">
+            <option value="Amasya">
+            <option value="Ankara">
+            <option value="Antalya">
+            <option value="Artvin">
+            <option value="Aydın">
+            <option value="Balıkesir">
+            <option value="Bilecik">
+            <option value="Bingöl">
+            <option value="Bitlis">
+            <option value="Bolu">
+            <option value="Bursa">
+            <option value="Çanakkale">
+            <option value="Çankırı">
+            <option value="Çorum">
+            <option value="Denizli" > 
+            <option value="Diyarbakır">
+            <option value="Edirne">
+            <option value="Elazığ">
+            <option value="Erzincan">
+            <option value="Erzurum">
+            <option value="Eskişehir">
+            <option value="Gaziantep">
+            <option value="Giresun">
+            <option value="Gümüşhane">
+            <option value="Hakkari">
+            <option value="Hatay">
+            <option value="Isparta">
+            <option value="Mersin">
+            <option value="İstanbul">
+            <option value="İzmir">
+            <option value="Kars">
+            <option value="Kastamonu">
+            <option value="Kayseri">
+            <option value="Kırklareli">
+            <option value="Kırşehir">
+            <option value="Kocaeli">
+            <option value="Konya">
+            <option value="Kütahya">
+            <option value="Malatya">
+            <option value="Manisa">
+            <option value="Kahramanmaraş">
+            <option value="Mardin">
+            <option value="Muş">
+            <option value="Nevşehir">
+            <option value="Niğde">
+            <option value="Ordu">
+            <option value="Rize">
+            <option value="Sakarya">
+            <option value="Samsun">
+            <option value="Siirt">
+            <option value="Sinop">
+            <option value="Sivas">
+            <option value="Tekirdağ">
+            <option value="Tokat">
+            <option value="Trabzon">
+            <option value="Tunceli">
+            <option value="Şanlıurfa">
+            <option value="Uşak">
+            <option value="Van">
+            <option value="Yozgat">
+            <option value="Zongunldak">
+            <option value="Aksaray">
+            <option value="Bayburt">
+            <option value="Karaman">
+            <option value="Kırıkkale">
+            <option value="Batman">
+            <option value="Şırnak">
+            <option value="Bartın">
+            <option value="Ardahan">
+            <option value="Iğdır">
+            <option value="Yalova">
+            <option value="Karabük">
+            <option value="Kilis">
+            <option value="Osmaniye">
+            <option value="Düzce">
+            </datalist required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Cinsiyet:</td>
+        <td>
+            <label class="_cınsıyet">
+                Erkek
+                <input type="radio" checked="checked" name="radio">
+                <span class="_cinsiyet"></span>
+            </label>
+            <label class="_cınsıyet">
+                Kadın
+                <input type="radio" name="radio">
+                <span class="_cinsiyet"></span>
+            </label>      
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>Referanslar:</td>
+        <td><textarea name="referans" id="referans" cols="30" rows="4"></textarea></td>
+    </tr>
+
+    <tr>
+        <td>Alışkanlıklar:</td>
+        <td>
+            Sigara içiyorum<input type="radio" name="sigara" id="sigara"><br>
+            Sosyal içiciyim<input type="radio" name="sigara" id="sigara"><br>
+            Sigara içmiyorum<input type="radio" name="sigara" id="sigara"><br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Yabancı Dil:</td>
+        <td>
+            <input type="checkbox" id="secim1" name="secim1"> İngilizce
+            <input type="checkbox" id="secim2" name="secim2">Almanca
+            <input type="checkbox" id="secim3" name="secim3">Fransızca<br>
+            <input type="checkbox" id="secim4" name="secim4">İspanyolca
+            <input type="checkbox" id="secim5" name="secim5">Çince
+            <input type="checkbox" id="secim6" name="secim6">Rusça<br>
+            <input type="checkbox" id="secim7" name="secim7">Diğer <br>
+            <textarea name="dil" name="secim7" cols="30" rows="4" placeholder="Diğer..."></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Askerlik Durumu:</td>
+        <td><input list="askerlik"><datalist id="askerlik">
+            <option value="Tecilli"></option>
+            <option value="Muaf"></option>
+            <option value="Yapıldı"></option>
+        </datalist>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Mezuniyet Durumu:</td>
+        <td><input list="egitim"><datalist id="egitim">
+            <option value="İlkokul">
+            <option value="İlkokul Terk">
+            <option value="Ortaokul">
+            <option value="Ortaokul Terk">
+            <option value="Lise Terk">
+            <option value="Lise">
+            <option value="Ön Lisans">
+            <option value="Lisans">
+            <option value="Yüksek Lisans">
+            <option value="Doktora">
+        </datalist>
+        </td>
+    </tr>
+
+    <tr>
+        <td>İş Deneyimleri:</td>
+        <td>
+            <textarea name="is" cols="30" rows="4" placeholder="Lütfen Çalıştığınız Yerleri Yazınız..."></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="reset" value="SİL"></td>
+        <td><input type="submit" value="GÖNDER"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
